@@ -10,19 +10,19 @@ Install with [Fisher](https://github.com/jorgebucaran/fisher):
 fisher install yoyuse/fish-ttt
 ```
 
-Install [go-ttt](https://github.com/yoyuse/go-ttt), for example:
+Install `cli-ttt` from [cli-ttt](https://github.com/yoyuse/cli-ttt), for example:
 
 ``` fish
-mkdir -p $HOME/go
-set -Ux GOPATH $HOME/go
-set -U fish_user_paths $fish_user_paths $GOPATH/bin
-go get github.com/yoyuse/go-ttt
+mkdir -p $HOME/bin
+fish_add_path $HOME/bin
+git clone https://github.com/yoyuse/cli-ttt.git
+cp cli-ttt/cli-ttt $HOME/bin/
 ```
 
-Set [go-ttt](https://github.com/yoyuse/go-ttt) as `FISH_TTT_COMMAND`:
+Set `cli-ttt` as `FISH_TTT_COMMAND`:
 
 ``` fish
-set -Ux FISH_TTT_COMMAND go-ttt
+set -Ux FISH_TTT_COMMAND cli-ttt
 ```
 
 ## Usage
