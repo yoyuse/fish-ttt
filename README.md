@@ -19,12 +19,6 @@ git clone https://github.com/yoyuse/cli-ttt.git
 cp cli-ttt/cli-ttt $HOME/bin/
 ```
 
-Set `cli-ttt` as `FISH_TTT_COMMAND`:
-
-``` fish
-set -Ux FISH_TTT_COMMAND cli-ttt
-```
-
 ## Usage
 
 Type TT-code and hit `Alt-j`, then code before cursor is translated to Japanese.
